@@ -1,0 +1,428 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Luis Enrique Salazar Chavez | Portafolio Personal</title>
+
+    <meta name="description"
+          content="Página personal de Luis Enrique Salazar Chavez, estudiante de Administración de la Universidad Católica San Pablo, interesado en el mundo de las finanzas.">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f7f8fa;
+            color: #333333;
+            margin: 0;
+            line-height: 1.7;
+        }
+
+        header {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e5e7eb;
+            padding: 20px 8%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            color: #183153;
+        }
+
+        nav a {
+            color: #444444;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #2563eb;
+        }
+
+        main {
+            max-width: 900px;
+            margin: auto;
+            padding: 35px 24px;
+        }
+
+        .presentacion {
+            padding: 65px 0 45px;
+        }
+
+        .etiqueta {
+            color: #2563eb;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        h1 {
+            color: #183153;
+            font-size: clamp(32px, 6vw, 48px);
+            line-height: 1.2;
+            margin: 15px 0;
+        }
+
+        h2 {
+            color: #183153;
+            font-size: 23px;
+            margin-top: 0;
+            margin-bottom: 18px;
+        }
+
+        h3 {
+            color: #263b59;
+            font-size: 17px;
+            margin-bottom: 5px;
+        }
+
+        .subtitulo {
+            color: #64748b;
+            font-size: 18px;
+        }
+
+        section {
+            background-color: #ffffff;
+            padding: 30px;
+            margin-bottom: 25px;
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+        }
+
+        .boton {
+            display: inline-block;
+            background-color: #183153;
+            color: #ffffff;
+            padding: 10px 18px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 12px;
+        }
+
+        .boton:hover {
+            background-color: #2563eb;
+        }
+
+        a {
+            color: #2563eb;
+        }
+
+        .lista-cursos,
+        .lista-companeros {
+            padding-left: 22px;
+        }
+
+        .lista-cursos li,
+        .lista-companeros li {
+            padding: 12px 0;
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        .lista-cursos li:last-child,
+        .lista-companeros li:last-child {
+            border-bottom: none;
+        }
+
+        .profesor {
+            display: block;
+            color: #555555;
+            font-size: 14px;
+            margin-top: 4px;
+        }
+
+        .nota {
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        footer {
+            background-color: #ffffff;
+            border-top: 1px solid #e5e7eb;
+            text-align: center;
+            color: #64748b;
+            padding: 22px;
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 18px 20px;
+            }
+
+            nav {
+                align-items: flex-start;
+            }
+
+            nav a {
+                margin-left: 0;
+                margin-right: 12px;
+            }
+
+            main {
+                padding: 20px;
+            }
+
+            .presentacion {
+                padding: 40px 0 30px;
+            }
+
+            section {
+                padding: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">LESC.</div>
+
+            <div>
+                <a href="#sobre-mi">Sobre mí</a>
+                <a href="#cursos">Cursos</a>
+                <a href="#companeros">Compañeros</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- PRESENTACIÓN PRINCIPAL -->
+
+        <div class="presentacion">
+            <span class="etiqueta">Portafolio personal</span>
+
+            <h1>Luis Enrique<br>Salazar Chavez</h1>
+
+            <p class="subtitulo">
+                Estudiante de Administración | Interés en Finanzas
+            </p>
+
+            <a class="boton"
+               href="https://www.linkedin.com/in/luis-enrique-salazar-ch%C3%A1vez-41899a448/"
+               target="_blank"
+               rel="noopener noreferrer">
+                Mi perfil de LinkedIn
+            </a>
+        </div>
+
+
+        <!-- DESCRIPCIÓN PERSONAL -->
+
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+
+            <p>
+                Hola, soy Luis Enrique, vivo en Arequipa y soy estudiante
+                de tercer año en la Universidad Católica San Pablo con
+                gran interés en el mundo de las finanzas.
+            </p>
+
+            <p>
+                Mi objetivo es desarrollar habilidades de liderazgo y
+                gestión que me permitan contribuir al crecimiento de
+                organizaciones en el futuro.
+            </p>
+
+            <p>
+                <strong>Universidad:</strong>
+                <a href="https://ucsp.edu.pe/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Universidad Católica San Pablo
+                </a>
+            </p>
+
+            <p>
+                <strong>Carrera:</strong> Administración
+            </p>
+
+            <p>
+                <strong>Ubicación:</strong> Arequipa, Perú
+            </p>
+        </section>
+
+
+        <!-- CURSOS Y PROFESORES -->
+
+        <section id="cursos">
+            <h2>Cursos de la carrera</h2>
+
+            <p>
+                A continuación, presento algunos de los cursos que llevo
+                en mi formación universitaria y los perfiles profesionales
+                de sus respectivos profesores.
+            </p>
+
+            <ol class="lista-cursos">
+
+                <li>
+                    <h3>Introducción a la Computación</h3>
+
+                    <span class="profesor">
+                        Profesor:
+                        <a href="https://www.linkedin.com/in/ecuadrosv"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Ernesto Cuadros
+                        </a>
+                    </span>
+                </li>
+
+                <li>
+                    <h3>
+                        Análisis Financiero y Matemática Financiera
+                    </h3>
+
+                    <span class="profesor">
+                        Profesora:
+                        <a href="https://www.linkedin.com/in/mar%C3%ADa-bel%C3%A9n-bocchio-linares-96846035/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            María Belén Bocchio Linares
+                        </a>
+                    </span>
+                </li>
+
+                <li>
+                    <h3>Comportamiento del Consumidor</h3>
+
+                    <span class="profesor">
+                        Profesora:
+                        <a href="https://www.linkedin.com/in/fabiola-postigo-99996b3b/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Fabiola Postigo Mendoza
+                        </a>
+                    </span>
+                </li>
+
+                <li>
+                    <h3>Filosofía de la Naturaleza</h3>
+
+                    <span class="profesor">
+                        Profesora:
+                        <a href="https://www.linkedin.com/in/isabel-morales-benito-96847134/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            Isabel Morales Benito
+                        </a>
+                    </span>
+                </li>
+
+            </ol>
+        </section>
+
+
+        <!-- PÁGINAS WEB DE LOS COMPAÑEROS -->
+
+        <section id="companeros">
+            <h2>Páginas web de mis compañeros</h2>
+
+            <p>
+                En esta sección se encuentran los enlaces a las páginas
+                personales de cuatro compañeros de clase.
+            </p>
+
+            <ol class="lista-companeros">
+
+                <li>
+                    <strong>Compañero 1:</strong>
+                    [Escribe aquí su nombre]
+
+                    <br>
+
+                    <a href="https://example.com"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Enlace a su página web
+                    </a>
+                </li>
+
+                <li>
+                    <strong>Compañero 2:</strong>
+                    [Escribe aquí su nombre]
+
+                    <br>
+
+                    <a href="https://example.com"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Enlace a su página web
+                    </a>
+                </li>
+
+                <li>
+                    <strong>Compañero 3:</strong>
+                    [Escribe aquí su nombre]
+
+                    <br>
+
+                    <a href="https://example.com"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Enlace a su página web
+                    </a>
+                </li>
+
+                <li>
+                    <strong>Compañero 4:</strong>
+                    [Escribe aquí su nombre]
+
+                    <br>
+
+                    <a href="https://example.com"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Enlace a su página web
+                    </a>
+                </li>
+
+            </ol>
+
+            <p class="nota">
+                Recuerda reemplazar los nombres y enlaces de ejemplo
+                por los datos reales de tus compañeros.
+            </p>
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+
+    <footer>
+        <p>
+            Luis Enrique Salazar Chavez |
+            Portafolio personal
+        </p>
+
+        <p>Arequipa, Perú</p>
+    </footer>
+
+</body>
+</html>
+```
